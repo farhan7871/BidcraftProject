@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.bidcraft">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".NotificationActivity"></activity>
+        <activity android:name=".NotificationsListActivity" />
+        <activity android:name=".AuctionListActivity" />
+        <activity android:name=".ProductListActivity" />
+        <activity android:name=".AddInformationActivity" />
+        <activity android:name=".AddAuctionActivity" />
+        <activity android:name=".AddProductActivity" />
+        <activity android:name=".InformationActivity" />
+        <activity android:name=".PostListActivity" />
+        <activity android:name=".ListOrderActivity" />
+        <activity android:name=".AccountActivity" />
+        <activity android:name=".RegisterActivity" />
+        <activity android:name=".LoginActivity" />
+        <activity android:name=".AuctionActivity" />
+        <activity android:name=".ProductActivity" />
+        <activity android:name=".CategoryPlasticActivity" />
+        <activity android:name=".CategoryWoodActivity" />
+        <activity android:name=".CategoryMetalActivity" />
+        <activity android:name=".CategoryStoneActivity" />
+        <activity android:name=".CategoryFiberActivity" />
+        <activity android:name=".CategoryClayActivity" />
+        <activity android:name=".ShoppingCartActivity" />
+        <activity android:name=".SearchActivity" />
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
