@@ -101,7 +101,7 @@
 
 
         <ImageView
-            android:id="@+id/ivclay"
+            android:id="@+id/ivclay2"
             android:layout_width="70dp"
             android:layout_height="70dp"
             android:layout_below="@+id/tvKategori"
@@ -114,7 +114,7 @@
             android:id="@+id/tvclay"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@+id/ivclay"
+            android:layout_below="@+id/ivclay2"
             android:layout_marginLeft="10dp"
             android:layout_marginRight="30dp"
             android:text="Tanah Liat"
@@ -129,7 +129,7 @@
             android:layout_marginLeft="20dp"
             android:layout_marginTop="20dp"
             android:layout_marginRight="30dp"
-            android:layout_toRightOf="@+id/ivclay"
+            android:layout_toRightOf="@+id/ivclay2"
             android:src="@mipmap/ic_knitting" />
 
         <TextView
@@ -248,7 +248,7 @@
     <androidx.cardview.widget.CardView
         android:id="@+id/cardView"
         android:layout_width="match_parent"
-        android:layout_height="40dp"
+        android:layout_height="wrap_content"
         android:layout_marginLeft="15dp"
         android:layout_marginRight="15dp"
         app:layout_constraintBottom_toTopOf="@+id/horizontalScrollView"
@@ -256,14 +256,26 @@
         app:layout_constraintStart_toStartOf="parent">
 
         <TextView
+            android:id="@+id/acaralelang"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="10dp"
-            android:layout_marginTop="5dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="10dp"
             android:layout_marginBottom="5dp"
             android:text="Acara Lelang"
+            android:fontFamily="@font/mregular"
             android:textSize="20sp"
             android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginBottom="10dp"
+            android:text="Dapatkan mahakarya menarik dari pengrajin"
+            android:fontFamily="@font/mlight"
+            android:textSize="14sp" />
 
     </androidx.cardview.widget.CardView>
 
