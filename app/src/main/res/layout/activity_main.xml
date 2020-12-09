@@ -96,6 +96,7 @@
             android:layout_height="wrap_content"
             android:gravity="center_horizontal|center_vertical"
             android:text="Kategori Kerajinan"
+            android:fontFamily="@font/mregular"
             android:textSize="20sp"
             android:textStyle="bold" />
 
@@ -115,14 +116,15 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@+id/ivclay2"
-            android:layout_marginLeft="10dp"
+            android:layout_marginLeft="14dp"
             android:layout_marginRight="30dp"
+            android:fontFamily="@font/mlight"
             android:text="Tanah Liat"
-            android:textSize="15sp"
+            android:textSize="12sp"
             android:textStyle="bold" />
 
         <ImageView
-            android:id="@+id/ivknitting"
+            android:id="@+id/ivfiber"
             android:layout_width="70dp"
             android:layout_height="70dp"
             android:layout_below="@+id/tvKategori"
@@ -133,15 +135,16 @@
             android:src="@mipmap/ic_knitting" />
 
         <TextView
-            android:id="@+id/tvknitting"
+            android:id="@+id/tvfiber"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@+id/ivknitting"
-            android:layout_marginLeft="20dp"
+            android:layout_below="@+id/ivfiber"
+            android:layout_marginLeft="22dp"
             android:layout_marginRight="30dp"
             android:layout_toRightOf="@+id/tvclay"
+            android:fontFamily="@font/mlight"
             android:text="Serat Alam"
-            android:textSize="15sp"
+            android:textSize="12sp"
             android:textStyle="bold" />
 
         <ImageView
@@ -151,8 +154,7 @@
             android:layout_below="@+id/tvKategori"
             android:layout_marginLeft="20dp"
             android:layout_marginTop="20dp"
-            android:layout_marginRight="10dp"
-            android:layout_toRightOf="@+id/ivknitting"
+            android:layout_toRightOf="@+id/ivfiber"
             android:src="@mipmap/ic_metal" />
 
         <TextView
@@ -160,15 +162,16 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@+id/ivmetal"
-            android:layout_marginLeft="35dp"
+            android:layout_marginLeft="40dp"
             android:layout_marginRight="10dp"
-            android:layout_toRightOf="@+id/tvknitting"
+            android:layout_toRightOf="@+id/tvfiber"
+            android:fontFamily="@font/mlight"
             android:text="Logam"
-            android:textSize="15sp"
+            android:textSize="12sp"
             android:textStyle="bold" />
 
         <ImageView
-            android:id="@+id/ivrock"
+            android:id="@+id/ivstone"
             android:layout_width="70dp"
             android:layout_height="70dp"
             android:layout_below="@+id/tvclay"
@@ -178,25 +181,26 @@
             android:src="@mipmap/ic_rock" />
 
         <TextView
-            android:id="@+id/tvrock"
+            android:id="@+id/tvstone"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@+id/ivrock"
+            android:layout_below="@+id/ivstone"
             android:layout_marginLeft="30dp"
             android:layout_marginRight="30dp"
+            android:fontFamily="@font/mlight"
             android:text="Batu"
-            android:textSize="15sp"
+            android:textSize="12sp"
             android:textStyle="bold" />
 
         <ImageView
             android:id="@+id/ivwood"
             android:layout_width="70dp"
             android:layout_height="70dp"
-            android:layout_below="@+id/tvknitting"
+            android:layout_below="@+id/tvfiber"
             android:layout_marginLeft="20dp"
             android:layout_marginTop="30dp"
             android:layout_marginRight="30dp"
-            android:layout_toRightOf="@+id/ivrock"
+            android:layout_toRightOf="@+id/ivstone"
             android:src="@mipmap/ic_wood" />
 
         <TextView
@@ -206,9 +210,10 @@
             android:layout_below="@+id/ivwood"
             android:layout_marginLeft="60dp"
             android:layout_marginRight="40dp"
-            android:layout_toRightOf="@id/tvrock"
+            android:layout_toRightOf="@id/tvstone"
+            android:fontFamily="@font/mlight"
             android:text="Kayu"
-            android:textSize="15sp"
+            android:textSize="12sp"
             android:textStyle="bold" />
 
         <ImageView
@@ -224,15 +229,16 @@
 
         <TextView
             android:id="@+id/tvplastic"
-            android:layout_width="wrap_content"
+            android:layout_width="149dp"
             android:layout_height="wrap_content"
             android:layout_below="@+id/ivplastic"
-            android:layout_marginLeft="25dp"
+            android:layout_marginLeft="12dp"
             android:layout_marginRight="10dp"
             android:layout_toRightOf="@id/tvwood"
+            android:fontFamily="@font/mlight"
             android:text="Barang Bekas"
             android:textAlignment="center"
-            android:textSize="15sp"
+            android:textSize="12sp"
             android:textStyle="bold" />
     </RelativeLayout>
 
