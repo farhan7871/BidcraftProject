@@ -6,10 +6,13 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageView;
+import android.widget.LinearLayout;
 
 public class MainActivity extends AppCompatActivity {
 
-    ImageView ivclay, ivclay2, ivfiber, ivmetal, ivstone, ivwood, ivplastic ;
+    LinearLayout ivclay, ivclay2, ivfiber, ivmetal, ivstone, ivwood, ivplastic;
+
+    ImageView image1;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -22,6 +25,8 @@ public class MainActivity extends AppCompatActivity {
         ivstone = findViewById(R.id.ivstone);
         ivwood = findViewById(R.id.ivwood);
         ivplastic = findViewById(R.id.ivplastic);
+
+        image1 = findViewById(R.id.image1);
 
         ivclay2.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -68,6 +73,14 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {
                 Intent gotoplastic = new Intent(MainActivity.this,CategoryPlasticActivity.class);
                 startActivity(gotoplastic);
+            }
+        });
+
+        image1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent gotolelang1 = new Intent(MainActivity.this,AuctionActivity.class);
+                startActivity(gotolelang1);
             }
         });
     }

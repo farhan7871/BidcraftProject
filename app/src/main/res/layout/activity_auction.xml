@@ -6,37 +6,45 @@
     android:layout_height="match_parent"
     tools:context=".AuctionActivity">
 
-    <HorizontalScrollView
-        android:id="@+id/horizontalScrollView"
+    <ImageView
+        android:id="@+id/header_ticket_detail"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="@color/cardview_light_background"
-
-        app:layout_constraintBottom_toTopOf="@+id/scrollView2"
+        android:layout_height="0dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/gambar3"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        app:layout_constraintTop_toTopOf="parent" />
 
+    <TextView
+        android:id="@+id/title_ticket"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="56dp"
+        android:fontFamily="@font/mregular"
+        android:text="Gelas Klasik"
+        android:textAlignment="center"
+        android:textColor="#FFF"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:orientation="horizontal">
+    <TextView
+        android:id="@+id/location_tiket"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/mlight"
+        android:textAlignment="center"
+        android:textColor="#FFF"
+        android:textSize="20sp"
+        android:text="Yogyakarta, Indonesia"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/title_ticket" />
 
-            <ImageView
-                android:id="@+id/ivvclay"
-                android:layout_width="415dp"
-                android:layout_height="310dp"
-                android:src="@drawable/gambar1" />
-
-            <ImageView
-                android:id="@+id/ivvknitting"
-                android:layout_width="415dp"
-                android:layout_height="310dp"
-                android:src="@drawable/gambar2" />
-
-        </LinearLayout>
-    </HorizontalScrollView>
 
     <ScrollView
         android:id="@+id/scrollView2"
@@ -44,96 +52,293 @@
         android:layout_height="385dp"
         app:layout_constraintBottom_toTopOf="@id/bottomNav"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent">
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/header_ticket_detail"
+        app:layout_constraintVertical_bias="0.0">
 
-    <LinearLayout
-        android:id="@+id/linearLayout3"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical">
-
-        <TextView
+        <LinearLayout
+            android:id="@+id/linearLayout3"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="20dp"
-            android:layout_marginTop="40dp"
-            android:layout_marginRight="20dp"
-            android:text="00:00:00:00"
-            android:textAlignment="center"
-            android:textSize="20sp"
-            android:textStyle="bold" />
+            android:layout_height="match_parent"
+            android:orientation="vertical">
 
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="20dp"
-            android:layout_marginTop="10dp"
-            android:layout_marginRight="20dp"
-            android:text="Kerajinan Tanah Liat"
-            android:textAlignment="center"
-            android:textSize="30sp"
-            android:textStyle="bold" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="0dp"
+                android:text="Hasil karya tangan"
+                android:fontFamily="@font/mregular"
+                android:textSize="16sp" />
 
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="30dp"
-            android:layout_marginRight="30dp"
-            android:layout_marginTop="20dp"
-            android:textAlignment="center"
-            android:text="Deskripsi"
-            android:textSize="20sp"
-            android:textStyle="bold" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="4dp"
+                android:layout_marginRight="0dp"
+                android:text="Yogyakarta Handmade"
+                android:fontFamily="@font/mmedium"
+                android:textSize="20sp" />
 
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="30dp"
-            android:layout_marginRight="30dp"
-            android:textAlignment="center"
-            android:text="Kerajinan tanah liat adalah suatu bentuk kerajinan yang bahan utamanya berasal dari tanah liat, yang kemudian dibuat/diolah menjadi bahan kerajinan seperti guci."
-            android:textSize="15sp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="4dp"
+                android:layout_marginRight="0dp"
+                android:text="Indonesia, Yogyakarta"
+                android:fontFamily="@font/mmedium"
+                android:textSize="14sp" />
 
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="20dp"
-            android:layout_marginRight="20dp"
-            android:layout_marginTop="30dp"
-            android:text="Rp500.000"
-            android:textAlignment="center"
-            android:textSize="25sp"
-            android:textStyle="bold" />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="16dp"
+                android:background="#EDEDED" />
 
-        <EditText
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="90dp"
-            android:layout_marginTop="10dp"
-            android:layout_marginRight="90dp"
-            android:ems="10"
-            android:hint="Masukkan Harga"
-            android:inputType="number" />
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
 
-        <Button
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginRight="0dp"
+                    android:text="Mulai Dari"
+                    android:fontFamily="@font/mmedium"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginRight="0dp"
+                    android:text="Rp 5,000,000"
+                    android:fontFamily="@font/mmedium"
+                    android:textSize="20sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="4dp"
+                android:layout_marginRight="0dp"
+                android:text="*ajukan penawaran lebih tinggi"
+                android:fontFamily="@font/mlight"
+                android:textSize="10sp" />
+
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="80dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="4dp"
+                        android:layout_marginRight="0dp"
+                        android:text="Periode Lelang"
+                        android:fontFamily="@font/mregular"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="4dp"
+                        android:layout_marginRight="0dp"
+                        android:text="1 Hari"
+                        android:fontFamily="@font/mmedium"
+                        android:textSize="20sp" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="16dp"
+                android:background="#EDEDED" />
+
+        <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="160dp"
-            android:layout_marginTop="10dp"
-            android:layout_marginRight="160dp"
-            android:text="Pasang" />
+            android:orientation="vertical">
 
-    </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginRight="0dp"
+                android:text="Waktu"
+                android:fontFamily="@font/mmedium"
+                android:textSize="20sp" />
+
+            <ProgressBar
+                android:id="@+id/progressBar"
+                style="@style/ProgressBarPrimary"
+                android:layout_width="350dp"
+                android:layout_height="10dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginLeft="18dp"
+                android:layout_marginRight="40dp"
+                android:indeterminate="false"
+                android:tooltipText="sss"
+                android:max="100"
+                android:progress="40"
+                android:theme="@style/ProgressBarPrimary" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginRight="0dp"
+                android:text="Progress:"
+                android:fontFamily="@font/mmedium"
+                android:textSize="16sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="4dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginRight="0dp"
+                    android:text="70%"
+                    android:fontFamily="@font/mregular"
+                    android:textSize="16sp" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="12dp"
+                    android:layout_marginRight="0dp"
+                    android:text="Deskripsi"
+                    android:fontFamily="@font/mmedium"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:layout_width="350dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="12dp"
+                    android:layout_marginRight="0dp"
+                    android:text="Kerajinan tanah liat adalah suatu bentuk kerajinan yang bahan utamanya berasal dari tanah liat, yang kemudian dibuat/diolah menjadi bahan kerajinan seperti guci."
+                    android:fontFamily="@font/mregular"
+                    android:textSize="12sp" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="16dp"
+                android:background="#EDEDED" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="24dp"
+                android:layout_marginRight="24dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="12dp"
+                    android:fontFamily="@font/mlight"
+                    android:text="Harga"
+                    android:textColor="@color/bluePrimary"
+                    android:textSize="20sp" />
+
+                <EditText
+                    android:id="@+id/bio"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@drawable/bg_input_edit"
+                    android:fontFamily="@font/mmedium"
+                    android:inputType="text"
+                    android:lines="1"
+                    android:paddingLeft="12dp"
+                    android:hint="Rp."
+                    android:textColor="#dddd" />
+
+            </LinearLayout>
+
+        </LinearLayout>
     </ScrollView>
 
-    <com.google.android.material.bottomnavigation.BottomNavigationView
-        android:id="@+id/bottomNav"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="@android:color/darker_gray"
+    <LinearLayout
+        android:id="@+id/linearLayout4"
+        android:layout_width="410dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="620dp"
+        android:layout_marginEnd="1dp"
+        android:layout_marginRight="1dp"
+        android:layout_marginBottom="50dp"
+        android:background="@drawable/bg_layout_cream"
         app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:menu="@menu/menu_bottom_nav" />
+        app:layout_constraintTop_toTopOf="parent">
 
+    <Button
+        android:layout_width="350dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginRight="24dp"
+        android:layout_marginLeft="24dp"
+        android:background="@color/bluePrimary"
+        android:fontFamily="@font/mmedium"
+        android:text="Ikut Lelang Sekarang"
+        android:textColor="#FFF"
+        android:textSize="18dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.704"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/linearLayout4"
+        app:layout_constraintVertical_bias="0.0" />
+
+    </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

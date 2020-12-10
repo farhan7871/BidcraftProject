@@ -69,18 +69,21 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginLeft="24dp"
         android:layout_marginTop="20dp"
         android:text="Acara Lelang Saya"
         android:textColor="@color/cardview_light_background"
         android:textSize="25sp"
+
         android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@+id/linearLayout"
-
         app:layout_constraintEnd_toStartOf="@+id/imageView2"
         app:layout_constraintHorizontal_bias="0.754"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.428" />
+        app:layout_constraintVertical_bias="0.317" />
+
 
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/bottomNav"
@@ -92,9 +95,9 @@
         app:menu="@menu/menu_bottom_nav" />
 
     <ImageView
-        android:id="@+id/imageView2"
-        android:layout_width="50dp"
-        android:layout_height="50dp"
+        android:id="@+id/btnadd"
+        android:layout_width="39dp"
+        android:layout_height="39dp"
         android:layout_marginTop="10dp"
         android:layout_marginRight="30dp"
         app:layout_constraintBottom_toTopOf="@+id/linearLayout"
