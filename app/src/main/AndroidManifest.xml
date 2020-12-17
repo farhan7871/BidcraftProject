@@ -9,7 +9,11 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".NotificationActivity"></activity>
+        <activity android:name=".SignInAct"></activity>
+        <activity android:name=".GetStartedActivity" />
+        <activity android:name=".HomeActivity" />
+        <activity android:name=".HomeActvity" />
+        <activity android:name=".NotificationActivity" />
         <activity android:name=".NotificationsListActivity" />
         <activity android:name=".AuctionListActivity" />
         <activity android:name=".ProductListActivity" />

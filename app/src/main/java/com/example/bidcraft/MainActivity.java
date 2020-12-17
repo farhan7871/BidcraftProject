@@ -3,86 +3,80 @@ package com.example.bidcraft;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
-import android.view.View;
+import android.os.Handler;
+import android.view.animation.Animation;
+import android.view.animation.AnimationUtils;
 import android.widget.ImageView;
-import android.widget.LinearLayout;
+import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
 
-    LinearLayout ivclay, ivclay2, ivfiber, ivmetal, ivstone, ivwood, ivplastic;
+    Animation app_splash, btt;
+    ImageView app_logo;
+    TextView app_subtitle;
 
-    ImageView image1;
+    String USERNAME_KEY = "usernamekey";
+    String username_key = "";
+    String username_key_new = "";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        ivclay2 = findViewById(R.id.ivclay2);
-        ivfiber = findViewById(R.id.ivfiber);
-        ivmetal = findViewById(R.id.ivmetal);
-        ivstone = findViewById(R.id.ivstone);
-        ivwood = findViewById(R.id.ivwood);
-        ivplastic = findViewById(R.id.ivplastic);
+        // load animation
+        app_splash = AnimationUtils.loadAnimation(this, R.anim.app_splash);
+        btt = AnimationUtils.loadAnimation(this, R.anim.btt);
 
-        image1 = findViewById(R.id.image1);
+        // load element
+        app_logo = findViewById(R.id.app_logo);
+        app_subtitle = findViewById(R.id.app_subtitle);
 
-        ivclay2.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-            Intent gotoclay = new Intent(MainActivity.this,CategoryClayActivity.class);
-            startActivity(gotoclay);
-            }
-        });
+        // run animation
+        app_logo.startAnimation(app_splash);
+        app_subtitle.startAnimation(btt);
 
-        ivfiber.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent gotofiber = new Intent(MainActivity.this,CategoryFiberActivity.class);
-                startActivity(gotofiber);
-            }
-        });
-
-        ivmetal.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent gotometal = new Intent(MainActivity.this,CategoryMetalActivity.class);
-                startActivity(gotometal);
-            }
-        });
-
-        ivstone.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent gotostone = new Intent(MainActivity.this,CategoryStoneActivity.class);
-                startActivity(gotostone);
-            }
-        });
-
-        ivwood.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent gotowood = new Intent(MainActivity.this,CategoryWoodActivity.class);
-                startActivity(gotowood);
-            }
-        });
-
-        ivplastic.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent gotoplastic = new Intent(MainActivity.this,CategoryPlasticActivity.class);
-                startActivity(gotoplastic);
-            }
-        });
-
-        image1.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent gotolelang1 = new Intent(MainActivity.this,AuctionActivity.class);
-                startActivity(gotolelang1);
-            }
-        });
+        Handler handler = new Handler();
+        handler.postDelayed(new Runnable(){
+                @Override
+                public void run() {
+                    // merubah activity ke activity lain
+                    Intent gogetstarted = new Intent(MainActivity.this, GetStartedActivity.class);
+                    startActivity(gogetstarted);
+                    finish();
+                }
+            }, 2000); // 2000 ms = 2s
     }
-
 }
+
+//    public  void getUsernameLocal(){
+//        SharedPreferences sharedPreferences = getSharedPreferences(USERNAME_KEY, MODE_PRIVATE);
+//        username_key_new = sharedPreferences.getString(username_key, "");
+//        if(username_key_new.isEmpty()){
+//            Handler handler = new Handler();
+ //           handler.postDelayed(new Runnable() {
+//               @Override
+//                public void run() {
+//                    // merubah activity ke activity lain
+//                    Intent gogetstarted = new Intent(MainActivity.this, HomeActivity.class);
+//                    startActivity(gogetstarted);
+//                    finish();
+//                }
+//            }, 2000); // 2000 ms = 2s
+//
+//        }else{
+//            // setting timer untuk 2 detik / 1000ml = 1 detik
+//            Handler handler = new Handler();
+//            handler.postDelayed(new Runnable() {
+//                @Override
+//                public void run() {
+//                    /// merubah activity ke activity lain
+//                    Intent gogetstarted = new Intent(MainActivity.this, HomeActivity.class);
+//                    startActivity(gogetstarted);
+//                    finish();
+//                }
+//            }, 2000); // 2000 ms = 2s
+//        }
+
