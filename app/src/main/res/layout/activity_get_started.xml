@@ -54,7 +54,7 @@
         app:layout_constraintTop_toBottomOf="@+id/emblem_app" />
 
     <Button
-        android:id="@+id/btn_sign_in"
+        android:id="@+id/btn_masuk"
         android:layout_width="match_parent"
         android:layout_height="55dp"
         android:layout_marginStart="48dp"
@@ -71,7 +71,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/btn_new_account_create"
+        android:id="@+id/btn_daftar"
         android:layout_width="match_parent"
         android:layout_height="55dp"
         android:layout_marginTop="16dp"
@@ -85,7 +85,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btn_sign_in" />
+        app:layout_constraintTop_toBottomOf="@+id/btn_masuk" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

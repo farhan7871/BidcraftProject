@@ -7,4 +7,9 @@
     <color name="blueSecondary">#2595F5</color>
     <color name="gray_ultra_light">#2595F5</color>
 
+    <color name="grayPrimary">#8D8D8D</color>
+    <color name="blackPrimary">#21272C</color>
+    <color name="backgroundPrimary">#EDF1F8</color>
+    <color name="greenPrimary">#3AC2A9</color>
+
 </resources>

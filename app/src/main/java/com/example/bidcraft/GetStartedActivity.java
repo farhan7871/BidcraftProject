@@ -13,7 +13,7 @@ import android.widget.TextView;
 
 public class GetStartedActivity extends AppCompatActivity {
 
-    Button btn_sign_in, btn_new_account_create;
+    Button btn_masuk, btn_daftar;
     Animation ttb, btt;
     ImageView emblem_app;
     TextView intro_app;
@@ -27,8 +27,8 @@ public class GetStartedActivity extends AppCompatActivity {
         ttb = AnimationUtils.loadAnimation(this, R.anim.ttb);
         btt = AnimationUtils.loadAnimation(this, R.anim.btt);
 
-        btn_sign_in = findViewById(R.id.btn_sign_in);
-        btn_new_account_create = findViewById(R.id.btn_new_account_create);
+        btn_masuk = findViewById(R.id.btn_masuk);
+        btn_daftar = findViewById(R.id.btn_daftar);
 
         emblem_app = findViewById(R.id.emblem_app);
         intro_app = findViewById(R.id.intro_app);
@@ -36,10 +36,10 @@ public class GetStartedActivity extends AppCompatActivity {
         // run animation
         emblem_app.startAnimation(ttb);
         intro_app.startAnimation(ttb);
-        btn_sign_in.startAnimation(btt);
-        btn_new_account_create.startAnimation(btt);
+        btn_masuk.startAnimation(btt);
+        btn_daftar.startAnimation(btt);
 
-        btn_sign_in.setOnClickListener(new View.OnClickListener() {
+        btn_masuk.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent gotosign = new Intent(GetStartedActivity.this,SignInAct.class);
@@ -48,10 +48,10 @@ public class GetStartedActivity extends AppCompatActivity {
             }
         });
 
-        btn_new_account_create.setOnClickListener(new View.OnClickListener() {
+        btn_daftar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent gotoregisterone = new Intent(GetStartedActivity.this,RegisterActivity.class);
+                Intent gotoregisterone = new Intent(GetStartedActivity.this, RegisterOneActivity.class);
                 startActivity(gotoregisterone);
 
             }
